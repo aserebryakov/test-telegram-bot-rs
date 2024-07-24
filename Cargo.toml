@@ -6,5 +6,6 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-frankenstein = {version = "*", features = ["async-telegram-trait", "async-http-client"], path = "frankenstein"}
+frankenstein = { version = "0.32", default-features = false, features = ["async-http-client"] }
+#frankenstein = {version = "*", features = ["async-telegram-trait", "async-http-client"], path = "frankenstein"}
 tokio = {version = "*", features = ["full"]}
